@@ -9,7 +9,7 @@ namespace WinForm_FormManager {
 	public class FormManager : ApplicationContext, IEnumerable<BaseForm>, ICollection<BaseForm> {
 		public static readonly FormManager Instance = new FormManager();
 
-		private List<BaseForm> _forms_list = new List<BaseForm>();
+		private readonly List<BaseForm> _forms_list = new List<BaseForm>();
 		public System.Collections.ObjectModel.ReadOnlyCollection<BaseForm> FormList {
 			get { return _forms_list.AsReadOnly(); }
 		}
