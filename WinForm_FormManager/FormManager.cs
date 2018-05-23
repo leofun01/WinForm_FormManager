@@ -125,7 +125,7 @@ namespace WinForm_FormManager {
 			_forms_list.CopyTo(array, arrayIndex);
 		}
 
-		private object _lock_obj = new object();
+		private readonly object _lock_obj = new object();
 		private EventHandler<CancelFormEventArgs> _form_adding;
 		public event EventHandler<CancelFormEventArgs> FormAdding {
 			add { lock(_lock_obj) { _form_adding += value; } }
