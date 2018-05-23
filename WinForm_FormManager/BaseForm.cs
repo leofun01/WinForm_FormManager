@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace OptKurs_v1_WinForm {
+namespace WinForm_FormManager {
 	public class BaseForm : Form {
 		public BaseForm() {
 			FormManager.Instance.Add(this);
