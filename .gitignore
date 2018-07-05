@@ -1,5 +1,7 @@
 *.suo
 *.cache
 *.manifest
-*/bin
-*/obj
+*.exe
+*.dll
+**/bin/**
+**/obj/**
