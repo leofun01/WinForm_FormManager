@@ -1,4 +1,5 @@
+*.suo
 *.cache
 *.manifest
-*.vshost.exe
-*.suo
+*/bin
+*/obj
